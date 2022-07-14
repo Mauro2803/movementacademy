@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -9,6 +9,9 @@
     <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400&family=Oswald&family=Poppins:wght@500&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -16,7 +19,7 @@
     <header class="hero">
         <nav class="nav container">
             <div class="nav__logo">
-                <img src= "/images/imagen-removebg-preview.png" width="100rem" height="100rem">
+                <img src= "/images/imagen-removebg-preview.png" alt="logo">
             </div>
 
             <ul class="nav__link nav__link--menu">
@@ -32,12 +35,13 @@
                 <li class="nav__items">
                     <a href="contacto.html" class="nav__links">CONTACTO</a>
                 </li>
-
-                <img src="./images/x.svg" class="nav__close">
+                <li>
+                    <img src="./images/x.svg" class="nav__close" alt="cierre">
+                </li>
             </ul>
 
             <div class="nav__menu">
-                <img src="./images/menu.svg" class="nav__img">
+                <img src="./images/menu.svg" class="nav__img" alt="menù">
             </div>
         </nav>
 
@@ -56,17 +60,17 @@
             <div class="about__main">
                 <article class="about__icons">
                     <h3 class="about__title">Certificaciones</h3>
-                    <img src="/images/Ellipse 22.png" alt="certificacion">
+                    <img src="/images/Ellipse22.png" alt="certificacion">
                     <p class="about__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore consequatur officia perspiciatis incidunt laborum laudantium velit error eum numquam aliquid.</p>
                 </article>
                 <article class="about__icons">
                     <h3 class="about__title">Especialistas</h3>
-                    <img src="/images/Ellipse 23.png" alt="certificacion">
+                    <img src="/images/Ellipse23.png" alt="certificacion">
                     <p class="about__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore consequatur officia perspiciatis incidunt laborum laudantium velit error eum numquam aliquid. </p>
                 </article>
                 <article class="about__icons">
                     <h3 class="about__title">La Mejor Comunidad</h3>
-                    <img src="/images/Ellipse 24.png" alt="certificacion">
+                    <img src="/images/Ellipse24.png" alt="certificacion">
                     <p class="about__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore consequatur officia perspiciatis incidunt laborum laudantium velit error eum numquam aliquid.</p>
                 </article>
             </div>
@@ -81,6 +85,7 @@
                     </p>
                     <a href="#" class="cta cta__bg">MAS INFORMACION</a>
                 </div>
+            </div>
         </section>
 
         <section class="price container">
@@ -119,68 +124,48 @@
                 </div>
             </div>
         </section>
-    </section>
-
-        <section class="testimony">
-            <div class="testimony__container container">
-                <img src="./images/left.svg" class="testimony__arrow" id="before">
-
-                <section class="testimony__body testimony__body--show" data-id="1">
-                    <div class="testimony__texts">
-                        <h2 class="subtitle">Mi Nombre es alejandra, <span class="testimony__course">estudiante
-                                de FISIOTERAPIA.</span></h2>
-                        <p class="testimony__review">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut est
-                            esse, asperiores eaque totam nulla repudiandae quasi, deserunt culpa exercitationem
-                            blanditiis laborum veniam laboriosam saepe reiciendis dolorem. Cum, ratione voluptatum!</p>
-                    </div>
-
-                    <figure class="testimony__picture">
-                        <img src="./images/art-hauntington-jzY0KRJopEI-unsplash (1).jpg" class="testimony__img">
+        <div class="testimony_slide">
+            <ul>
+                <li>
+                    <section>
+                        <h2>Mi nombre es Franciso Hernandez,<br><span>estudiante de FISIOTERAPIA.</span></h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam explicabo a nisi deleniti! <br> Unde modi quas porro autem, officiis laboriosam in minus consequuntur dolor explicabo quidem aut eius vero reprehenderit.</p>
+                    </section>
+                    <figure>
+                        <img src="./images/art-hauntington-jzY0KRJopEI-unsplash(1).jpg" alt="testimonio">
                     </figure>
-                </section>
-
-                <section class="testimony__body" data-id="2">
-                    <div class="testimony__texts">
-                        <h2 class="subtitle">Mi nombre es Javier Perez, <span class="testimony__course">estudiante de
-                                FISIOTERAPIA.</span></h2>
-                        <p class="testimony__review">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut est
-                            esse, asperiores eaque laborum veniam laboriosam saepe reiciendis dolorem. Cum, ratione
-                            voluptatum!</p>
-                    </div>
-
-                    <figure class="testimony__picture">
-                        <img src="./images/austin-wade-X6Uj51n5CE8-unsplash(1).jpg" class="testimony__img">
+                </li>
+                <li>
+                    <section>
+                        <h2>Mi nombre es Austin Wade,<br><span>estudiante de FISIOTERAPIA.</span></h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam explicabo a nisi deleniti! <br> Unde modi quas porro autem, officiis laboriosam in minus consequuntur dolor explicabo quidem aut eius vero reprehenderit.</p>
+                    </section>
+                    <figure>
+                        <img src="./images/austin-wade-X6Uj51n5CE8-unsplash(1).jpg" alt="testimonio">
                     </figure>
-                </section>
-
-                <section class="testimony__body" data-id="3">
-                    <div class="testimony__texts">
-                        <h2 class="subtitle">Mi nombre es Jose Arteaga, <span class="testimony__course">estudiante de
-                                FISIOTERAPIA.</span></h2>
-                        <p class="testimony__review">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut est
-                            esse, niam laboriosam saepe reiciendis dolorem. Cum, ratione voluptatum!</p>
-                    </div>
-
-                    <figure class="testimony__picture">
-                        <img src="./images/elijah-hiett-vAVGdV1oklQ-unsplash.jpg" class="testimony__img">
+                </li>
+                <li>
+                    <section>
+                        <h2>Mi nombre es Ricardo,<br><span>estudiante de FISIOTERAPIA.</span></h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam explicabo a nisi deleniti! <br> Unde modi quas porro autem, officiis laboriosam in minus consequuntur dolor explicabo quidem aut eius vero reprehenderit.</p>
+                    </section>
+                    <figure>
+                        <img src="./images/elijah-hiett-vAVGdV1oklQ-unsplash.jpg" alt="testimonio">
                     </figure>
-                </section>
-
-                <img src="./images/right.svg" class="testimony__arrow" id="next">
-            </div>
-        </section>
-
+                </li>
+            </ul>
+        </div>
         <section class="questions container">
             <h2 class="subtitle">Preguntas frecuentes</h2>
             <p class="questions__paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea, porro
                 doloribus neque perspiciatis sapiente fuga.</p>
 
-            <section class="questions__container">
+            <div class="questions__container">
                 <article class="questions__padding">
                     <div class="questions__answer">
                         <h3 class="questions__title">Donde se toman los cursos?
                             <span class="questions__arrow">
-                                <img src="./images/down.svg" class="questions__img">
+                                <img src="./images/down.svg" class="questions__img" alt="flecha">
                             </span>
                         </h3>
 
@@ -197,7 +182,7 @@
                     <div class="questions__answer">
                         <h3 class="questions__title">¿Qué aprenderé en este curso?
                             <span class="questions__arrow">
-                                <img src="./images/down.svg" class="questions__img">
+                                <img src="./images/down.svg" class="questions__img" alt="flecha">
                             </span>
                         </h3>
 
@@ -214,7 +199,7 @@
                     <div class="questions__answer">
                         <h3 class="questions__title">¿Cuales son los costos?
                             <span class="questions__arrow">
-                                <img src="./images/down.svg" class="questions__img">
+                                <img src="./images/down.svg" class="questions__img" alt="flecha">
                             </span>
                         </h3>
 
@@ -226,7 +211,7 @@
                             quam atque?</p>
                     </div>
                 </article>
-            </section>
+            </div>
 
             <section class="questions__offer">
                 <h2 class="subtitle">¿Estas listo para aprender?</h2>
@@ -239,11 +224,8 @@
     </main>
 
     <footer class="footer">
-        <section class="footer__container container">
+        <div class="footer__container container">
             <nav class="nav nav--footer">
-                <h2 class="footer__title"> </h2>
-
-               
             <ul class="nav__link nav__link--footer">
                 <li class="nav__items">
                     <a href="#" class="nav__links">INICIO</a>
@@ -257,11 +239,10 @@
                 <li class="nav__items">
                     <a href="#" class="nav__links">CONTACTO</a>
                 </li>
-
-                <img src="./images/x.svg" class="nav__close">
+                <li>
+                    <img src="./images/x.svg" class="nav__close" alt="cierre">
+                </li>
             </ul>
-
-                </ul>
             </nav>
 
             <form class="footer__form" action="https://formspree.io/f/mknkkrkj" method="POST">
@@ -271,13 +252,13 @@
                     <input type="submit" value="Registrate" class="footer__submit">
                 </div>
             </form>
-        </section>
+        </div>
 
         <section class="footer__copy container">
             <div class="footer__social">
-                <a href="#" class="footer__icons"><img src="./images/facebook.svg" class="footer__img"></a>
-                <a href="#" class="footer__icons"><img src="./images/instagram.svg" class="footer__img"></a>
-                <a href="#" class="footer__icons"><img src="./images/whats.svg" class="footer__img"></a>
+                <a href="#" class="footer__icons"><img src="./images/facebook.svg" class="footer__img" alt="facebook"></a>
+                <a href="#" class="footer__icons"><img src="./images/instagram.svg" class="footer__img" alt="instagram"></a>
+                <a href="#" class="footer__icons"><img src="./images/whats.svg" class="footer__img" alt="whatsapp"></a>
             </div>
 
             <h3 class="footer__copyright">Derechos reservados &copy; CESAR MARTINEZ</h3>

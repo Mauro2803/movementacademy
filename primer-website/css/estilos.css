@@ -8,10 +8,9 @@
 }
 html{
     font-size: 62.5%;
-    background-color: #ff3915;
+    background: linear-gradient(to bottom, #FF3915, #FFB714);
     opacity: 1;
-    background-image:  radial-gradient(#FFB714 2px, transparent 2px), radial-gradient(#ff3915 2px, #FFF 2px);
-    background-size: 80px 80px;
+    background-size: 100%;
     background-position: 0 0,40px 40px;
 }
 :root {
@@ -20,7 +19,8 @@ html{
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Oswald', sans-serif;
 }
 
 .container {
@@ -29,6 +29,7 @@ body {
     margin: 0 auto;
     overflow: hidden;
     padding: var(--padding-container);
+    font-family: 'Kanit', sans-serif;
 }
 
 .hero {
@@ -64,6 +65,11 @@ body {
     height: 100%;
     display: flex;
     align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+nav > div > img{
+    width:"100rem"; 
+    height:"100rem";
 }
 
 .nav__title {
@@ -106,8 +112,7 @@ body {
 }
 .nav__items{
     list-style: none;
-    --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
-
+    --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%)
 }
 .nav__items::after{
     content: "";
@@ -316,59 +321,64 @@ color: #fff;
 }
 /* Testimony */
 
-.testimony{
+.testimony_slide{
+    overflow: hidden;
     background-color: #FFB714;
+    background-position-x: 0;
 }
+.testimony_slide > ul{
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    width: 350%;
+    height: 20rem;
+    margin-left: 2rem;
 
-.testimony__container{
-    display: grid;
-    grid-template-columns: 5rem 1fr 5rem;
-    gap: 1rem;
-    align-items: center;
+    animation: cambio 20s infinite;
+    animation-direction: alternate;
 }
+@keyframes cambio{
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
 
-.testimony__body{
-    display: grid;
-    grid-template-columns: 1fr max-content;
-    justify-content: space-between;
-    align-items: center;
-    gap: 2rem;
-    grid-column: 2/3;
-    grid-row: 1/2;
-    opacity: 0;
-    pointer-events: none;
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
 }
-
-
-.testimony__body--show{
-    pointer-events: unset;
-    opacity: 1;
-    transition: opacity 1.5s ease-in-out;
+.testimony_slide > ul > li{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 30rem;  
 }
-
-.testimony__img{
-    width: 25rem;
-    height: 25rem;
-    border-radius: 50%;
-    object-fit: cover;
-    object-position: 50% 30%;
+.testimony_slide > ul > li > section{
+    text-align: center;
 }
-
-.testimony__texts{
-    max-width: 700px;
+.testimony_slide > ul > li > section > h2{
+    line-height: 5rem;
+    font-size: 3rem;
 }
-
-.testimony__course{
+.testimony_slide > ul > li > section > h2 > span{
     background-color: #001A49;
-    color: #fff;
-    display: inline-block;
-    padding: .5rem;
+    color: white;
+    padding: 0.5rem;
+    margin: .5rem;
+    border-radius: 6%;
+}
+.testimony_slide > ul > li > section > p{
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-left: 6rem;
+}
+.testimony_slide > ul > li > figure{
+    width: 20rem;
+}
+.testimony_slide > ul > li > figure > img{
+    width: 20rem;
+    border-radius: 100%;
+    height: 20rem;
 }
 
-.testimony__arrow{
-    width: 90%;
-    cursor: pointer;
-}
+
 
 /* Questions */
 
@@ -744,7 +754,64 @@ color: #fff;
     text-decoration: none;
     font-size: 2rem;
 }
+/*Slider*/
+.hero__nosotros{
+    background-color: #FFB714;
+}
+.equipo_container{
+    overflow: hidden;
+}
+.equipo_container > h2{
+    font-size: 5rem;
+    text-align: center;
+    color:#001A49;
+}
+.equipo_slider{
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    margin:0, 1rem;
+    width: 400%;
+    height: 50%;
+    border: solid;
+    background-color: black;
 
+    animation: cambio 20s infinite;
+    animation-direction: alternate;
+}
+@keyframes cambio{
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+}
+.equipo_slider li{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    width: 57%;
+    overflow: hidden;
+    align-items: center;
+}
+.equipo_slider p{
+    font-size: 2rem;
+    color:white;
+    margin-left: 1rem;
+}
+.equipo_slider img{
+    height: 50rem;
+    border-radius:100%; 
+    padding: 0.5rem;
+    margin: 0rem, 2rem;
+}
 .nosotros{
    display: flex;
    text-align: center;
@@ -794,6 +861,8 @@ color: #fff;
     display: flex;
     align-items: center;
     text-align:center;
+    height:"300rem"; 
+    width:"500rem";
 }
 .vision__paragraph{
     font-size: 1.5rem;
